@@ -15,6 +15,11 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar:AppBar(
         title:const Text("Home Screen"),
       ),
+      body:Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
