@@ -12,7 +12,7 @@ class Routes{
       case RoutesName.splashScreen:
         return  MaterialPageRoute(builder: (context)=> const SplashScreen());
       case RoutesName.loginScreen:
-        return  MaterialPageRoute(builder: (context)=>const LoginScreen());
+        return  MaterialPageRoute(builder: (context)=> LoginScreen());
       case RoutesName.homeScreen:
         return  MaterialPageRoute(builder: (context)=>const HomeScreen());
       default:
