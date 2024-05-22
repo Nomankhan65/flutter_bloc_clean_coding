@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+part of 'login_bloc.dart';
 
 class LoginStates extends Equatable{
 

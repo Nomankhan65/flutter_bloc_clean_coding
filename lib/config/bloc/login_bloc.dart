@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'login_events.dart';
-import 'login_states.dart';
+part 'login_events.dart';
+part 'login_states.dart';
 
 class LoginBloc extends Bloc<LoginEvents,LoginStates>{
 

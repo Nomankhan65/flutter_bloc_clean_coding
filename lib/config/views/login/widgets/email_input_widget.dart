@@ -2,9 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_clean_coding/config/bloc/login_bloc.dart';
-import 'package:flutter_bloc_clean_coding/config/bloc/login_events.dart';
-import 'package:flutter_bloc_clean_coding/config/bloc/login_states.dart';
-
 class InputEmailWidget extends StatelessWidget {
   final FocusNode emailFocusNode;
                const InputEmailWidget({super.key,required this.emailFocusNode});
