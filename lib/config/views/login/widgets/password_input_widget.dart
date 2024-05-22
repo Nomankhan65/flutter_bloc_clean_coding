@@ -9,7 +9,6 @@ class PasswordInputWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LoginBloc,LoginStates>(
-        buildWhen:(current,previous)=>current.password!=previous.password,
         builder: (context,states){
           return TextFormField(
             keyboardType: TextInputType.emailAddress,

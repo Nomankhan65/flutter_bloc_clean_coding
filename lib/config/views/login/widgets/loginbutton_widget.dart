@@ -10,11 +10,10 @@ class LoginButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LoginBloc,LoginStates>(
-        buildWhen:(current,previous)=>false,
         builder: (context,states){
           return ElevatedButton(onPressed: (){
             if(formKey.currentState!.validate()){
-
+              context.read<LoginBloc>().add(LoginButton());
             }
           }, child: const Text('Login'));
         });
