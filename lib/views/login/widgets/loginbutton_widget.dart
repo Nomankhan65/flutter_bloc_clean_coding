@@ -23,12 +23,13 @@ class LoginButtonWidget extends StatelessWidget {
       }
     },
     child:BlocBuilder<LoginBloc,LoginStates>(
+        buildWhen: (current, previous) => current.postApiStatus != previous.postApiStatus,
       builder: (context,states){
         return ElevatedButton(onPressed: (){
           if(formKey.currentState!.validate()){
             context.read<LoginBloc>().add(LoginApi());
           }
-        }, child: const Text('Login'));
+        }, child:states.postApiStatus==PostApiStatus.loading?const CircularProgressIndicator(): const Text('Login'));
       }),
     );
 
