@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_clean_coding/config/routes/routes_name.dart';
-import 'package:flutter_bloc_clean_coding/config/views/home/home_screen.dart';
-import 'package:flutter_bloc_clean_coding/config/views/login/login_screen.dart';
 
-import '../views/splash/splash_screen.dart';
+import '../../views/home/home_screen.dart';
+import '../../views/login/login_screen.dart';
+import '../../views/splash/splash_screen.dart';
 
 class Routes{
 

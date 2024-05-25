@@ -1,11 +1,10 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:flutter_bloc_clean_coding/config/data/network/base_api_services.dart';
 import 'package:http/http.dart' as http;
 
 import '../exceptions/app_exceptions.dart';
+import 'base_api_services.dart';
 
 class NetworkApiService extends BaseApiServices{
 
@@ -38,6 +37,7 @@ class NetworkApiService extends BaseApiServices{
       ).timeout(const Duration(seconds:30));
       jsonResponse= returnResponse(response);
       if(response.statusCode==200){
+        print(response.statusCode);
       }
 
     }on SocketException{

@@ -29,7 +29,7 @@ class PasswordUnfocused extends LoginEvents{
 
 }
 
-class LoginButton extends LoginEvents{
+class LoginApi extends LoginEvents{
 
 }
 
